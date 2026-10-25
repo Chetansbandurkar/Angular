@@ -1,0 +1,29 @@
+
+<h1>Angular Lifecycle Demo</h1>
+
+<p>Parent employee name: {{ employeeName }}</p>
+
+<button (click)="changeName()">Change Employee Name</button>
+<button (click)="toggleEmployee()">
+  {{ showEmployee ? 'Destroy Employee' : 'Create Employee' }}
+</button>
+
+@if (showEmployee) {
+  <app-employee-card [name]="employeeName" />
+}
+
+
+
+
+
+
+
+
+<!--  OnChnage
+<h1>Angular Lifecycle Demo</h1>
+
+<p>Parent employee name: {{ employeeName }}</p>
+
+<button (click)="changeName()">Change Employee Name</button>
+
+<app-employee-card [name]="employeeName" /> -->

@@ -1,11 +1,15 @@
-import { Component, signal } from '@angular/core';
+
+import { Component } from '@angular/core';
+import { EmployeeCard } from './employee-card/employee-card';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [EmployeeCard],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('component-communication-lab');
+  employeeName = 'Chetan';
+  employeeRole = 'Software Developer';
 }
